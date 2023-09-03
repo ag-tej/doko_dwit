@@ -15,6 +15,8 @@
     @include('components.navbar')
     @yield('content')
     @include('components.footer')
+    <script src="{{ asset('js/particle.js') }}"></script>
+    <script src="{{ asset('js/my.js') }}"></script>
 </body>
 
 </html>

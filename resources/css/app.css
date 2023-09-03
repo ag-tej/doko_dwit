@@ -5,7 +5,7 @@
 @layer components
 {
     .card {
-        @apply h-36 aspect-3/2 py-4 px-6 bg-[#18212f] border-2 border-[#242c34] rounded flex flex-col justify-center gap-6 hover:shadow hover:shadow-[#ef4444]/30 hover:-mt-2;
+        @apply h-36 md:aspect-3/2 py-4 px-4 md:px-6 bg-[#18212f] border-2 border-[#242c34] rounded flex flex-col justify-center gap-6 hover:shadow hover:shadow-[#ef4444]/30 hover:-mt-2;
     }
 
     .svg_icon {

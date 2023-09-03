@@ -5,20 +5,20 @@
     <div id="particles-js" class="absolute top-0 left-0 w-full h-screen -z-10"></div>
     {{-- landing page content --}}
     <div>
-        <div class="flex justify-between items-center mt-12">
+        <div class="flex flex-col lg:flex-row justify-between items-center mt-8 xl:mt-16">
             {{-- doko robot section --}}
-            <section class="w-1/2">
+            <section class="lg:w-1/2">
                 <div class="flex items-center">
                     {{-- doko robot --}}
                     <img src="{{ asset('/images/robot.png') }}" alt="i_am_doko"
-                        class="-ml-10 drop-shadow-[0_0_8px_#ef4444] h-80 animate-bounce">
+                        class="-ml-10 drop-shadow-[0_0_8px_#ef4444] h-72 sm:h-80 animate-bounce">
                     <div class="text-gray-300 font-semibold">
-                        <p class="text-6xl">Hi!</p>
-                        <p class="text-5xl leading-relaxed">I am Doko,</p>
+                        <p class="text-4xl sm:text-6xl lg:text-4xl xl:text-6xl">Hi!</p>
+                        <p class="text-3xl sm:text-5xl lg:text-3xl xl:text-5xl leading-relaxed">I am Doko,</p>
                         {{-- changing text animation --}}
-                        <div class="text-4xl leading-snug font-bold text-gray-300">
-                            <div class="h-[50px] overflow-hidden">
-                                <span class="relative animate-textChange">
+                        <div class="text-sm sm:text-4xl lg:text-base xl:text-4xl leading-snug font-bold text-gray-300">
+                            <div class="sm:h-[40px] lg:h-fit xl:h-[40px] overflow-hidden">
+                                <span class="relative sm:animate-textChange lg:animate-none xl:animate-textChange">
                                     <span class="text-[#ff8515]">your digital companion.</span><br>
                                     <span class="text-[#4daf00]">a symbol of unity.</span><br>
                                     <span class="text-[#0091bf]">a basket of knowledge.</span><br>
@@ -31,7 +31,7 @@
                 </div>
             </section>
             {{-- cards section --}}
-            <section class="grid grid-cols-2 grid-flow-row gap-20">
+            <section class="grid grid-cols-2 my-8 lg:mt-0 grid-flow-row gap-5 sm:gap-8 lg:gap-12 xl:gap-16">
                 {{-- use loop here when data is fetched --}}
                 {{-- csit --}}
                 <a href="{{ route('csit') }}">
@@ -86,7 +86,7 @@
             </section>
         </div>
         {{-- happening at dwit section --}}
-        <section class="mt-12">
+        <section class="my-8">
             <p class="text-[#ef4444] text-xl font-bold ml-6 mb-2">Current Affairs</p>
             <div class="bg-[#18212f] border-2 border-[#242c34] rounded py-3 px-6">
                 <p class="text-xl font-medium text-white mb-2">Illustrator Workshop | DWIT Social Service Club</p>

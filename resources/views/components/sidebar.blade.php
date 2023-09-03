@@ -1,5 +1,5 @@
 <div>
-    <div class="flex items-center gap-3 my-2">
+    <div class="flex items-center gap-5 my-2">
         <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar"
             type="button" class="inline-flex items-center text-sm text-gray-300 xl:hidden">
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -13,7 +13,7 @@
             <img src="{{ asset('images/doko_logo.svg') }}" alt="doko_logo">
         </a>
     </div>
-    <aside id="default-sidebar" class="fixed z-40 w-64 transition-transform -translate-x-full h-screen xl:translate-x-0"
+    <aside id="default-sidebar" class="fixed z-40 w-48 2xl:w-64 transition-transform -translate-x-full h-screen xl:translate-x-0"
         aria-label="Sidebar">
         <div class="h-full px-3 py-4 overflow-y-auto bg-[#18212f]">
             <a href="/" class="hidden sm:block">

@@ -3,7 +3,7 @@
     @include('components.sidebar')
     <div class="xl:ml-40 my-4 xl:mt-0 mb-8">
         <p class="text-center text-xl text-gray-200 mb-4">Batch of 2011</p>
-        <div class="grid place-items-center md:grid-cols-3 gap-5 md:gap-8 xl:gap-16">
+        <div class="grid place-items-center sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8 xl:gap-6 2xl:gap-12">
             @for ($i = 0; $i < 8; $i++)
                 <div class="max-w-xs rounded overflow-hidden bg-[#18212f] border-2 border-[#242c34]">
                     <img class="w-full aspect-3/2 object-cover" src="{{ asset('images/tej.jpg') }}"

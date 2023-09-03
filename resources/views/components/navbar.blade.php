@@ -1,5 +1,7 @@
 <nav class="flex justify-between items-center my-4">
-    <img src="{{ asset('images/doko_logo.svg') }}" alt="doko_logo" class="max-w-[6rem]">
+    <a href="/" class="w-24">
+        <img src="{{ asset('images/doko_logo.svg') }}" alt="doko_logo">
+    </a>
     <div class="flex items-center gap-5">
         <a href="https://www.facebook.com/" target="blank"><img src="{{ asset('icons/facebook.svg') }}"
                 alt="link_to_facebook" class="h-5 object-contain aspect-3/2"></a>

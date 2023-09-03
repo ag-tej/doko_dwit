@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components
+{
+    .card {
+        @apply h-36 aspect-3/2 py-4 px-6 bg-[#18212f] border-2 border-[#242c34] rounded flex flex-col justify-center gap-6 hover:shadow hover:shadow-[#ef4444]/30 hover:-mt-2;
+    }
+
+    .svg_icon {
+        @apply w-12 h-12 text-[#ef4444] bg-[#321f2b] rounded-full p-1.5;
+    }
+}
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+        font-family: Nunito, sans-serif !important;
+        font-feature-settings: normal !important;
+        /* border: 1px solid red; */
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+        scroll-behavior: smooth;
+    }
+}

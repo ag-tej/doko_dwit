@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NP">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Doko</title>
+    <link rel="shortcut icon" href="{{ asset('icons/deer_logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     @vite('resources/css/app.css')
 </head>
 
-<body>
-
+<body class="bg-[#111827] max-w-7xl mx-auto min-h-screen flex flex-col">
+    @include('components.navbar')
+    @yield('content')
+    @include('components.footer')
 </body>
 
 </html>

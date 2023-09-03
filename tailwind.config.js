@@ -17,7 +17,8 @@ export default {
       spin: 'spin 1s linear infinite',
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-      bounce: 'bounce 1s infinite',
+      bounce: 'bounce 1s infinite ease-in-out',
+      textChange: 'textChange 10s infinite ease',
     },
     aria: {
       busy: 'busy="true"',
@@ -34,6 +35,7 @@ export default {
       auto: 'auto',
       square: '1 / 1',
       video: '16 / 9',
+      '3/2': '3 / 2',
     },
     backdropBlur: ({ theme }) => theme('blur'),
     backdropBrightness: ({ theme }) => theme('brightness'),
@@ -568,12 +570,38 @@ export default {
       },
       bounce: {
         '0%, 100%': {
-          transform: 'translateY(-25%)',
+          transform: 'translateY(-2%)',
           animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
         },
         '50%': {
           transform: 'none',
           animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+        },
+      },
+      textChange: {
+        '0%, 0%, 100%, 100%': {
+            top: '0',
+        },
+        '20%': {
+            top: '0',
+        },
+        '25%': {
+            top: '-50px',
+        },
+        '45%': {
+            top: '-50px',
+        },
+        '50%': {
+            top: '-100px',
+        },
+        '70%': {
+            top: '-100px',
+        },
+        '75%': {
+            top: '-150px',
+        },
+        '95%': {
+            top: '-150px',
         },
       },
     },

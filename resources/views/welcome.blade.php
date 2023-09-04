@@ -19,7 +19,7 @@
                         <div class="text-sm sm:text-4xl lg:text-base xl:text-4xl leading-snug font-bold text-gray-300">
                             <div class="sm:h-[40px] lg:h-fit xl:h-[40px] overflow-hidden">
                                 <span class="relative sm:animate-textChange lg:animate-none xl:animate-textChange">
-                                    <span class="text-[#ff8515]">your digital companion.</span><br>
+                                    <span class="text-[#ff8515]">your DWIT companion.</span><br>
                                     <span class="text-[#4daf00]">a symbol of unity.</span><br>
                                     <span class="text-[#0091bf]">a basket of knowledge.</span><br>
                                     <span class="text-[#c03aff]">a portal of possibilities.</span><br>
@@ -85,14 +85,35 @@
                 </div>
             </section>
         </div>
-        {{-- happening at dwit section --}}
-        <section class="my-8">
-            <p class="text-[#ef4444] text-xl font-bold ml-6 mb-2">Current Affairs</p>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <div class="bg-[#18212f] border-2 border-[#242c34] rounded py-3 px-6">
                 <p class="text-xl font-medium text-white mb-2">Illustrator Workshop | DWIT Social Service Club</p>
-                <p class="text-gray-300 text-justify">In collaboration with DWIT News and Media Team, a successful internal
-                    Adobe Illustrator Workshop took place on July 28, 2023, mentored by Mr. Gaurab Neupane, President of
-                    DWIT News and Media Club.</p>
+                <p class="text-gray-300 text-justify">In collaboration with DWIT News and Media Team, a successful
+                    internal Adobe Illustrator Workshop took place on July 28, 2023, mentored by Mr. Gaurab Neupane,
+                    President of DWIT News and Media Club.</p>
+            </div>
+        </div>
+        {{-- current affairs section --}}
+        <section class="my-8">
+            <p class="text-[#ef4444] text-xl font-bold ml-6 mb-2">Current Affairs</p>
+            {{-- scroll component --}}
+            <div class="flex flex-col m-auto p-auto">
+                <div class="flex overflow-x-scroll hide-scroll-bar">
+                    <div class="flex flex-nowrap">
+                        @for ($i = 0; $i < 10; $i++)
+                            <div class="inline-block px-3">
+                                <div class="relative scroll_card bg-cover"
+                                    style="background-image: url('{{ asset('images/current_affair.JPG') }}')">
+                                    <div class="absolute bg-black/50 h-full w-full"></div>
+                                    <div class="absolute text-gray-300 bottom-4 left-4 font-semibold">
+                                        <p>Illustrator Workshop</p>
+                                        <p> DWIT Social Service Club</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endfor
+                    </div>
+                </div>
             </div>
         </section>
     </div>
